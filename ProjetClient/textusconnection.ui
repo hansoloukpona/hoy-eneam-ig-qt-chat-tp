@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextUsConnection</class>
+ <widget class="QWidget" name="TextUsConnection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>460</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>460</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EneamChat</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QStackedWidget" name="connectionStacked">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>480</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>480</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="connection">
+    <widget class="QWidget" name="connectFormWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>150</y>
+       <width>330</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>260</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:8pt;
+background-color: rgb(0, 0, 0);
+
+</string>
+     </property>
+     <widget class="QLabel" name="connectFormIndication">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>210</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>210</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;Century Gothic&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CONNECTEZ-VOUS ICI </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="connectUserNameEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>200</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border-top:none;
+border-right:none;
+border-bottom:3pt;
+ 
+border-bottom-color: rgb(177, 171, 175);
+color: rgb(67, 67, 67);
+font: 12pt &quot;Comic Sans MS&quot;;
+placeholder:&quot;Nom d'utilisateur&quot;;</string>
+      </property>
+      <property name="placeholderText">
+       <string extracomment="Nom d'utilisateur">Entrez votre identifiant</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="connectlUserNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>190</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>190</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 13pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Nom d'utilisateur</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="connexionButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>200</y>
+        <width>210</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>210</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);
+font: 14pt &quot;Century Gothic&quot;;
+border-radius:8pt;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Connectez-vous</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>330</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 20pt &quot;Comic Sans MS&quot;;
+color:rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Bienvenue sur EneamChat</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Home">
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>431</width>
+       <height>413</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutHome">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="appNameLabelHome">
+        <property name="minimumSize">
+         <size>
+          <width>412</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>EneamChat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutHome_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutHome">
+          <property name="leftMargin">
+           <number>3</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>3</number>
+          </property>
+          <property name="bottomMargin">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="homeReturnButton">
+            <property name="minimumSize">
+             <size>
+              <width>115</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>115</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Quitter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="myName">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>My Name</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QListView" name="userListView">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>330</height>
+             </size>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="defaultDropAction">
+             <enum>Qt::IgnoreAction</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="notifications">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>330</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Discussion">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>440</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>440</width>
+       <height>400</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="appNameLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>420</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>420</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 16pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>EneamChat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="receverName">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>52</y>
+        <width>300</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Nom du Destinataire</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>421</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="messageWriteZone">
+         <property name="minimumSize">
+          <size>
+           <width>338</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="placeholderText">
+          <string>Écrivez votre message ici...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="sendButton">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Envoyer</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="goBackButton">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>53</y>
+        <width>115</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>115</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Retour</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="discussionZone">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>421</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>421</width>
+        <height>281</height>
+       </size>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Vos échanges de messages s'affichent ici. Utilusez les symboles suivants pour appliquer un style à vos textes :</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
